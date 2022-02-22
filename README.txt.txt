@@ -1,0 +1,1 @@
+Eu tentei adicionar a função de finalizar venda, e mostrar um relário mas quando abro o relatório da um erro e não consegui identificar, porém esta calculando tudo normal e mostrando os itens da lista

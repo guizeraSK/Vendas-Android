@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="12dp"
+    tools:context=".activities.ActivityVenda"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selecione um produto: "/>
+
+    <Spinner
+        android:id="@+id/spnProduto"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"></Spinner>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"/>
+
+    <EditText
+        android:id="@+id/edQuantidadeProduto"
+        android:inputType="numberSigned"
+        android:hint="Informe a quantidade do produto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:text="Adicionar Produto"
+        android:id="@+id/btAddProduto"
+        android:layout_width="match_parent"
+        android:onClick="eventAddProduto"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:text="Finalizar Compra"
+        android:id="@+id/btFinalizar"
+        android:onClick="eventFecharVenda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Carrinho de Compras: "/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TOTAL DA COMPRA: "/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txTotalVenda"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lsvProdutos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+
+</LinearLayout>
